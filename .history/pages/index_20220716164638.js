@@ -22,7 +22,7 @@ export default function Home({ results }) {
       <Navbar />
 
       {/* RESULTS */}
-      <Results results={results} />
+      <Results  />
     </div>
   );
 }

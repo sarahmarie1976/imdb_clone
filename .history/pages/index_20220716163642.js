@@ -22,7 +22,7 @@ export default function Home({ results }) {
       <Navbar />
 
       {/* RESULTS */}
-      <Results results={results} />
+      <Results results={results}/>
     </div>
   );
 }
@@ -30,7 +30,7 @@ export default function Home({ results }) {
 export async function getServerSideProps(context) {
   const genre = context.query.genre || 'fetchTrending';
   const request = await fetch(`
-  https://api.themoviedb.org/3${requests[genre].url}
+    https://api.themoviedb.org/3${requests[genre].url}
   `).then((response) => response.json());
 
   return {
