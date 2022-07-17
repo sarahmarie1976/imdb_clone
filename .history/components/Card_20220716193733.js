@@ -5,7 +5,7 @@ export default function Card({result}) {
  
   const BASE_URL = "https://image.tmdb.org/t/p/original";
   return (
-    <div className="p-3 hover:text-white cursor-pointer active:text-red-400 xl:hover:scale-105 transition-transform duration-200 " >
+    <div className="p-3 hover:text-white cursor-pointer active:text-red-400 xl:hover:scale-105 " >
       <Image 
         layout="responsive"
         src={BASE_URL + result.backdrop_path}

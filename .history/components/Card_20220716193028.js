@@ -5,7 +5,7 @@ export default function Card({result}) {
  
   const BASE_URL = "https://image.tmdb.org/t/p/original";
   return (
-    <div className="p-3 hover:text-white cursor-pointer active:text-red-400 xl:hover:scale-105 transition-transform duration-200 " >
+    <div className="p-3" >
       <Image 
         layout="responsive"
         src={BASE_URL + result.backdrop_path}
@@ -13,16 +13,16 @@ export default function Card({result}) {
         height={100}
          />
 
-     <div className="p-2" >
-      <p className="truncate text-lg">
+     <div className="" >
+      <p className="truncate">
       {result.overview}
       </p>
-      <h2 className="text-lg font-bold">
+      <h2 className="">
         {result.title || result.name}
       </h2>
-      <p className="flex items-center ">
+      <p className="">
         {result.release_date || result.first_air_date}
-        <ThumbUpIcon className="h-5 ml-3 mr-1" />
+        <ThumbUpIcon className="h-5" />
         {result.vote_count}
       </p>
 
