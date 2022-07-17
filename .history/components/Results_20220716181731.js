@@ -1,4 +1,5 @@
-import Card from "./Card";
+import React from 'react'
+import Card from './Card'
 
 export default function Results({ results }) {
   return (
@@ -8,4 +9,3 @@ export default function Results({ results }) {
       ))}
     </div>
   );
-}
